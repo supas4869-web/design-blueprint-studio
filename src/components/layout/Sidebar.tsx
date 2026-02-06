@@ -1,12 +1,14 @@
 import { Link, useLocation } from "react-router-dom";
 import { 
   LayoutDashboard, 
-  FolderKanban, 
+  CalendarDays, 
+  ListTodo,
   Users, 
+  UsersRound,
   FileText, 
   Settings,
   ChevronLeft,
-  Wallet
+  Building2
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
@@ -14,9 +16,11 @@ import { Button } from "@/components/ui/button";
 
 const menuItems = [
   { icon: LayoutDashboard, label: "แดชบอร์ด", path: "/" },
-  { icon: FolderKanban, label: "โครงการ", path: "/projects" },
+  { icon: CalendarDays, label: "กิจกรรม", path: "/events" },
+  { icon: ListTodo, label: "งาน", path: "/tasks" },
+  { icon: UsersRound, label: "ทีม", path: "/teams" },
   { icon: Users, label: "ผู้เข้าร่วม", path: "/participants" },
-  { icon: Wallet, label: "งบประมาณ", path: "/budget" },
+  { icon: Building2, label: "พนักงาน", path: "/employees" },
   { icon: FileText, label: "เอกสาร", path: "/documents" },
   { icon: Settings, label: "ตั้งค่า", path: "/settings" },
 ];
